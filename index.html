@@ -1,1 +1,117 @@
-"Hello world" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .box{
+    width: 520px;
+    height: 280px;
+    position: relative;
+    margin: 150px auto;
+    background-color: green;
+    overflow: hidden;
+  }
+  .box ul.pic{
+    list-style: none;
+    position: absolute;
+    width: 3640px;
+  }
+  .box ul.pic li{
+    float: left;
+  }
+  .box ul.btn{
+    height: 13px;
+    position: absolute;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    width: 70px;
+    left: 50%;
+    margin-left: -35px;
+    bottom: 15px;
+  }
+  .box ul.btn li{
+    float: left;
+    list-style: none;
+    margin: 3px;
+    margin-top: -6px;
+  }
+  .box ul.btn a{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(255,255,255);
+  }
+  .box ul.btn a.current{
+    background-color: #ff5000;
+  }
+
+  .box button{
+    display: inline-block;
+    position: absolute;
+    height: 30px;
+    width: 20px;
+    top: 50%;
+    border: 0;
+    margin-top: -15px;
+    background-color: rgba(60,60,60,0.3);
+    outline: none;
+    display: none;
+  }
+  .box button:hover{
+    cursor: pointer;
+    background-color: rgba(60,60,60,0.6);
+  }
+  .box button.pre{
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .box button.next{
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .box button i{
+    color:rgb(255,255,255);
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <ul class="pic">
+      <li><a href="#"><img src="./images/5.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/1.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/2.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/3.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/4.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/5.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/1.jpg" alt=""></a></li>
+    </ul>
+
+    <ul class="btn">
+      <li name="1"><a href="javascript:;" class="current"></a></li>
+      <li name="2"><a href="javascript:;"></a></li>
+      <li name="3"><a href="javascript:;"></a></li>
+      <li name="4"><a href="javascript:;"></a></li>
+      <li name="5"><a href="javascript:;"></a></li>
+    </ul>
+
+    <button type="button" class="pre"><i><</i></button>
+    <button type="button" name="button" class="next"><i>></i></button>
+  </div>
+
+
+
+<script type="text/javascript" src="./index.js">
+</script>
+</body>
+</html>
